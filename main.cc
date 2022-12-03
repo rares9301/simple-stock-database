@@ -8,7 +8,7 @@ using namespace std;
 #include "dependencies/sort.c++"
 #include "dependencies/del.c++"
 #include "dependencies/add.c++"
-//#include "dependencies/lowest.c++"
+#include "dependencies/lowest.c++"
 #include "dependencies/value.c++"
 #include "dependencies/members.c++"
 bool nofail;
@@ -26,9 +26,9 @@ int main()
         cout << "4. Ordonare produse alfabetic dupa tip + descrescator pret" << endl;
         cout << "5. Sterge produs " << endl;
         cout << "6. Adaugare produs in coada" << endl;
-        cout << "7. Cel mai ieftin produs"<<endl;
-        cout << "8. Valoare totala stoc"<<endl;
-        cout << "9. Membrii echipei"<<endl;
+        cout << "7. Cel mai ieftin produs" << endl;
+        cout << "8. Valoare totala stoc" << endl;
+        cout << "9. Membrii echipei" << endl;
         cout << "0. Iesire" << endl;
         cout << " " << endl;
         cout << "Operatiune: ";
@@ -47,11 +47,11 @@ int main()
             del();
         if (x == 6)
             add();
-        //if (x == 7)
-         //   lowest();
-        if (x==8)
-            cout<<"Valoare totala stoc: "<<value();
-        if( x==9)
+        if (x == 7)
+            lowest();
+        if (x == 8)
+            cout << "Valoare totala stoc: " << value();
+        if (x == 9)
             members();
     }
     return 0;
