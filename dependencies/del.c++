@@ -9,10 +9,10 @@ void del()
     char query_product_type[100];
     cin.get();
     cin.get(query_product_type, 100);
-    cout << "Ce element doriti sa stergeti? ( introuceti pozitie) "<<endl;
-     for (int i = 1; i <= n; i++) 
-     if (!stricmp(query_manufacturer, v[i].manufacturer) && !stricmp(query_product_type, v[i].product_type))
-                cout<< i << ". " << v[i].name <<endl;
+    cout << "Ce element doriti sa stergeti? ( introuceti pozitie) " << endl;
+    for (int i = 1; i <= n; i++)
+        if (!stricmp(query_manufacturer, v[i].manufacturer) && !stricmp(query_product_type, v[i].product_type))
+            cout << i << ". " << v[i].name << endl;
     cin >> position;
     for (int i = position; i <= n - 1; i++)
     {
@@ -24,5 +24,5 @@ void del()
         v[i].quantity = v[i + 1].quantity;
     }
     n--;
-    cout<<"Sters cu succes!"<<endl;
+    cout << "Sters cu succes!" << endl;
 }
