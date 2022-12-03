@@ -8,15 +8,14 @@ bool nofail;
 int x;
 int main()
 {
-    cout << "Lista Operatiuni:" << endl;
-    cout << "1. Citire produse" << endl;
-    cout << "2. Lista produse" << endl;
-    cout << "3. Lista produse ale unui furnizor"<<endl;
-    cout << "0. Iesire"<<endl;
-
     nofail = true;
     while (nofail)
-    {
+    {   cout << " " << endl;
+        cout << "Lista Operatiuni:" << endl;
+        cout << "1. Citire produse" << endl;
+        cout << "2. Lista produse" << endl;
+        cout << "3. Lista produse ale unui furnizor" << endl;
+        cout << "0. Iesire" << endl;
         cout << " " << endl;
         cout << "Operatiune: ";
         cin >> x;
@@ -26,9 +25,9 @@ int main()
             product_read();
         if (x == 2)
             product_list();
-        if  (x==3)
+        if (x == 3)
             manufacturer_products();
-
+        
     }
     return 0;
 }
