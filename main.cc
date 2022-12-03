@@ -5,6 +5,7 @@ using namespace std;
 #include "dependencies/product_list.c++"
 #include "dependencies/manufacturer_products.c++"
 #include "dependencies/sort.c++"
+#include "dependencies/del.c++"
 bool nofail;
 int x;
 int main()
@@ -17,7 +18,7 @@ int main()
         cout << "2. Lista produse" << endl;
         cout << "3. Lista produse ale unui furnizor" << endl;
         cout << "4. Ordonare produse alfabetic dupa tip + descrescator pret"<<endl;
-        //cout << "5. Sterge produs "<<endl;
+        cout << "5. Sterge produs "<<endl;
         //cout << "6. Adaugare produs in coada"
         //cout << "7. Cel mai ieftin produs"<<endl;
         //cout << "8. Valoare totala stoc"<<endl;
@@ -36,6 +37,8 @@ int main()
             manufacturer_products();
         if (x == 4)
            sort();
+        if( x==5)
+            del();
 
         
     }
